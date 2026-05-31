@@ -1,0 +1,68 @@
+.experiencias-container{
+    margin-top: 2rem;
+}
+
+.experiencia-container{
+    background:
+    linear-gradient(#111, #111) padding-box,
+    linear-gradient(90deg, #ae07ac, #b90113) border-box;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.titulo-experiencias{
+    font-size: 1.5rem;
+}
+
+
+
+@media (min-width: 1024px) {
+    .experiencias-container{
+        margin-top: 8rem;
+    }
+
+    .experiencia-container{
+        margin-bottom: 1.2rem;
+    }
+    .experiencia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .outline{
+        width:  0.4rem;                      /* Grosor de la línea */
+        height: 55rem;                       /* Alto de la línea */
+        background-color: rgb(255, 255, 255); /* Color de la línea */
+    
+        /* Redondea ambas esquinas superiores */
+        border-top-left-radius: 0.2rem;
+        border-top-right-radius: 0.2rem;
+        border-bottom-left-radius: 0.2rem;
+        border-bottom-right-radius: 0.2rem;
+        position: relative;
+        margin-right: 1rem;
+    }
+
+    
+
+    /* Flecha inferior */
+    .outline::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-left: 0.6rem solid transparent;
+        border-right: 0.6rem solid transparent;
+        border-top: 1rem solid white;
+    }
+
+    
+}

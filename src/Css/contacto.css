@@ -1,0 +1,103 @@
+.contacto {
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Título */
+.titulo-contacto {
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.titulo-contacto::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #e63946;
+    margin: 0.4rem auto;
+}
+
+/* Cards */
+.contacto-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+
+    padding: 0.8rem 1rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Iconos */
+.icono {
+    font-size: 1.5rem;
+    color: #e63946;
+    min-width: 24px;
+}
+
+/* Texto */
+.contacto-card p {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.contacto-card span {
+    font-size: 0.8rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+/* Botón */
+.btn-contacto {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+
+    background: #e63946;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background: #ff4d5a;
+    transform: translateY(-2px);
+}
+
+/* Flecha animada */
+.btn-contacto svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-contacto:hover svg {
+    transform: translateX(5px);
+}

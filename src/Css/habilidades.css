@@ -1,0 +1,53 @@
+.icono-habilidades{
+    color: red;
+    padding: .5rem;
+}
+
+.titulo-habilidades{
+    font-size: 1.5rem;
+}
+
+.HTML{
+    filter: drop-shadow(0 0 15px #ff8108);
+}
+
+.CSS{
+    filter: drop-shadow(0 0 15px #2d53e4);
+}
+.JS{
+    filter: drop-shadow(0 0 15px #f8e026);
+}
+.REACT{
+    filter: drop-shadow(0 0 15px #1ca1cb);
+}
+.GIT{
+    filter: drop-shadow(0 0 15px #f05539);
+}
+.GITHUB{
+    filter: drop-shadow(0 0 15px #ffffff);
+}
+.FIGMA{
+    filter: drop-shadow(0 0 15px #b85efe);
+}
+.PYTHON{
+    filter: drop-shadow(0 0 15px #2066a7);
+}
+
+.habilidades-container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .4rem;
+}
+
+.iconos-habilidades{
+    width: 4.4rem;
+    margin-bottom: .5rem;
+}

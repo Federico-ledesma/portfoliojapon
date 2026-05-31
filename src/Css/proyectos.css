@@ -1,0 +1,186 @@
+/* CONTENEDOR TITULO */
+.titulo-proyecto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* TITULO */
+.titulo-proyecto {
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.titulo-proyecto::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #e63946;
+    display: block;
+}
+
+/* BOTON HEADER */
+.boton-proyecto {
+    background: transparent;
+    color: #e63946;
+    border: 1px solid #e63946;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.boton-proyecto:hover {
+    background: #e63946;
+    color: white;
+}
+
+/* CARD PROYECTO */
+.proyectos-container {
+    background: rgba(20, 20, 25, 0.8);
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.proyectos-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* IMAGEN */
+.img-proyectos {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.proyectos-container:hover .img-proyectos {
+    transform: scale(1.03);
+    filter: brightness(0.8);
+}
+
+/* TITULO PROYECTO */
+.proyecto {
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* DESCRIPCION */
+.proyecto-descripcion {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+/* TECH TAGS */
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.btn-tech {
+    background: rgba(255,255,255,0.05);
+    color: #ddd;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* BOTONES */
+.btn-code-container {
+    display: flex;
+    gap: 1rem;
+}
+
+/* BOTON BASE */
+.btn-code-container div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    border: 1px solid #e63946;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* TEXTO BOTON */
+.btn-code {
+    background: none;
+    border: none;
+    color: #e63946;
+    font-size: 0.9rem;
+}
+
+/* ICONOS */
+.btn-code-container svg {
+    color: #e63946;
+    transition: 0.3s ease;
+}
+
+/* HOVER BOTONES */
+.btn-code-container div:hover {
+    background: #e63946;
+}
+
+.btn-code-container div:hover .btn-code,
+.btn-code-container div:hover svg {
+    color: white;
+}
+
+
+@media (min-width: 1024px) {
+
+    .proyectos-grid {
+        max-width: 1200px;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
+
+    /* SACAMOS el margin individual porque ahora hay grid */
+    .proyectos-container {
+        margin-bottom: 0;
+        width: 90%;
+        height: 90%;
+    }
+
+    /* MEJORAMOS LA IMAGEN */
+    .img-proyectos {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* HACEMOS QUE LAS CARDS CREZCAN IGUALES */
+    .proyectos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* BOTONES AL FINAL SIEMPRE */
+    .btn-code-container {
+        margin-top: auto;
+    }
+}
