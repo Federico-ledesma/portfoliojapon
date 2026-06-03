@@ -41,6 +41,7 @@
 }
 
 /* CARD PROYECTO */
+
 .proyectos-container {
     background: rgba(20, 20, 25, 0.8);
     border: 1px solid rgba(255,255,255,0.05);
@@ -54,13 +55,9 @@
     padding: 1.5rem;
     border-radius: 12px;
 
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.proyectos-container:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-}
+
 
 /* IMAGEN */
 .img-proyectos {
@@ -72,6 +69,8 @@
 .proyectos-container:hover .img-proyectos {
     transform: scale(1.03);
     filter: brightness(0.8);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
+
 }
 
 /* TITULO PROYECTO */
@@ -159,12 +158,14 @@
         gap: 5rem;
     }
 
-    /* SACAMOS el margin individual porque ahora hay grid */
-    .proyectos-container {
-        margin-bottom: 0;
-        width: 90%;
-        height: 90%;
+    .proyecto-item{
+        transition: transform 0.2s ease-in-out;
     }
+
+    .proyecto-item:hover{
+        transform: scale(1.05);
+    }
+
 
     /* MEJORAMOS LA IMAGEN */
     .img-proyectos {
@@ -174,13 +175,41 @@
 
     /* HACEMOS QUE LAS CARDS CREZCAN IGUALES */
     .proyectos-container {
+        margin-bottom: 0;
+        width: 90%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        animation: aparecerConScroll linear both;
+  
+        /* Vincula la animación al scroll de la pantalla */
+        animation-timeline: view();
+
+        /* Controla en qué parte de la pantalla empieza y termina el efecto */
+        animation-range: entry 10% cover 30%; 
     }
 
     /* BOTONES AL FINAL SIEMPRE */
     .btn-code-container {
         margin-top: auto;
     }
+
+
+    /* 1. Definimos la animación de entrada */
+    @keyframes aparecerConScroll {
+      0% {
+        opacity: 0;
+        transform: translateY(30px); /* Empieza más abajo */
+        filter: blur(5px);          /* Difuminado inicial */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);    /* Posición original */
+        filter: blur(0);             /* Totalmente nítido */
+      }
+    }
+
+
 }

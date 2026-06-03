@@ -18,48 +18,48 @@ function Experiencias() {
                 
                 <div >
                     <div className="experiencia-container">            
-                    <strong>Frontend Developer</strong>
-                    <p>
-                        Empresa Tech S.A <br></br>
-                        Ene 2024 - Actualidad <br></br>
-                        Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
-                    </p>   
+                        <strong>Frontend Developer</strong>
+                        <p>
+                            Empresa Tech S.A <br></br>
+                            Ene 2024 - Actualidad <br></br>
+                            Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
+                        </p>   
                     </div> 
 
                     <div className="experiencia-container">            
-                    <strong>Frontend Developer</strong>
-                    <p>
-                        Empresa Tech S.A <br></br>
-                        Ene 2024 - Actualidad <br></br>
-                        Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
-                    </p>   
+                        <strong>Frontend Developer</strong>
+                        <p>
+                            Empresa Tech S.A <br></br>
+                            Ene 2024 - Actualidad <br></br>
+                            Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
+                        </p>   
                     </div>  
 
                     <div className="experiencia-container">            
-                    <strong>Frontend Developer</strong>
-                    <p>
-                        Empresa Tech S.A <br></br>
-                        Ene 2024 - Actualidad <br></br>
-                        Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
-                    </p>   
+                        <strong>Frontend Developer</strong>
+                        <p>
+                            Empresa Tech S.A <br></br>
+                            Ene 2024 - Actualidad <br></br>
+                            Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
+                        </p>   
                     </div> 
 
                     <div className="experiencia-container">            
-                    <strong>Frontend Developer</strong>
-                    <p>
-                        Empresa Tech S.A <br></br>
-                        Ene 2024 - Actualidad <br></br>
-                        Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
-                    </p>   
+                        <strong>Frontend Developer</strong>
+                        <p>
+                            Empresa Tech S.A <br></br>
+                            Ene 2024 - Actualidad <br></br>
+                            Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
+                        </p>   
                     </div> 
 
                     <div className="experiencia-container">            
-                    <strong>Frontend Developer</strong>
-                    <p>
-                        Empresa Tech S.A <br></br>
-                        Ene 2024 - Actualidad <br></br>
-                        Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
-                    </p>   
+                        <strong>Frontend Developer</strong>
+                        <p>
+                            Empresa Tech S.A <br></br>
+                            Ene 2024 - Actualidad <br></br>
+                            Desarrollo de interfaces para aplicaciones web utilizando React, TypeScript y Tailwind CSS. Colaboracion en un equipo agil.
+                        </p>   
                     </div> 
                 </div>
                 

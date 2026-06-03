@@ -9,28 +9,37 @@
 
 .HTML{
     filter: drop-shadow(0 0 15px #ff8108);
+    animation: zoom1 1s ease-in-out infinite alternate both;
 }
 
 .CSS{
     filter: drop-shadow(0 0 15px #2d53e4);
+    animation: zoom2 1s ease-in-out 1s infinite alternate both;
 }
 .JS{
     filter: drop-shadow(0 0 15px #f8e026);
+    animation: zoom1 1s ease-in-out infinite alternate both;
+
 }
 .REACT{
     filter: drop-shadow(0 0 15px #1ca1cb);
+    animation: zoom2 1s ease-in-out 1s infinite alternate both;
 }
 .GIT{
     filter: drop-shadow(0 0 15px #f05539);
+    animation: zoom1 1s ease-in-out infinite alternate both;
 }
 .GITHUB{
     filter: drop-shadow(0 0 15px #ffffff);
+    animation: zoom2 1s ease-in-out 1s infinite alternate both;
 }
 .FIGMA{
     filter: drop-shadow(0 0 15px #b85efe);
+    animation: zoom1 1s ease-in-out infinite alternate both;
 }
 .PYTHON{
     filter: drop-shadow(0 0 15px #2066a7);
+    animation: zoom2 1s ease-in-out 1s infinite alternate both;
 }
 
 .habilidades-container{
@@ -51,3 +60,24 @@
     width: 4.4rem;
     margin-bottom: .5rem;
 }
+
+@keyframes zoom1 {
+  0% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoom2 {
+  0% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(1.2);
+  }
+}
+

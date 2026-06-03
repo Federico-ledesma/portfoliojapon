@@ -94,7 +94,8 @@ function Proyectos() {
 
             <div className='proyectos-grid'>
                 {proyectos.map((proyecto, index) => (
-                    <article className="proyectos-container" key={index}>
+                <div className="proyecto-item" key={index}> 
+                    <article className="proyectos-container">
                         <img 
                             className='img-proyectos' 
                             src={proyecto.imagen} 
@@ -122,8 +123,8 @@ function Proyectos() {
                                 <span><FaGithub /></span>
                             </div>
                         </div>
-
                     </article>
+                </div>
                 ))}
             </div>
             
